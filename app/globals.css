@@ -155,6 +155,7 @@
 
   /* Right sidebar */
   .right-sidebar {
+    /* hidden on small devices but shows on larger */
     @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-200 xl:flex w-[355px] xl:overflow-y-scroll !important;
   }
 
