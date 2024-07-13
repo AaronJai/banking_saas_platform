@@ -27,3 +27,7 @@ app/
 
 3. Route groups are not added to file-based routing.
 e.g., you can do /sign-in instead of /auth/sign-in
+
+## Forms
+Forms can be tricky but one of the most complex things we'll do.
+We build ours using react-hook-form and zod (a great library for form validation)

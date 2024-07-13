@@ -32,7 +32,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                 </SheetTrigger>
 
                 <SheetContent side="right" className="border-none bg-white">
-                    <Link href="/" className='cursor-pointer flex items-center gap-1 [x=4'>
+                    <Link href="/" className='cursor-pointer flex items-center gap-1 px=4'>
                             <Image 
                                 src="/icons/logo.svg"
                                 alt='MoneyMate logo'
