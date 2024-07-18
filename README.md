@@ -1,5 +1,11 @@
 # MoneyMate
-Banking app that employs finance management, connects multiple bank accounts, real-time transactions and allow money transfers. Next.js 14
+Banking app that employs finance management, connects multiple bank accounts, real-time transactions and allow money transfers.
+
+# Usage:
+On sign-up ensure you follow placeholder format for State, DOB and SSN.
+When linking, username is user_good and password is user_pass.
+this is using a SANDBOX. Development and Production keys are paid through dwolla.
+Chase checking and savings account works best.
 
 
 ## Horizon
