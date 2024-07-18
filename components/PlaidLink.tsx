@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import { Button } from './ui/button'
-import { PlaidLinkOnSuccess, PlaidLinkOptions, usePlaidLink } from 'react-plaid-link'
+import React, { useCallback, useEffect, useState } from 'react';
+import { Button } from './ui/button';
+import { PlaidLinkOnSuccess, PlaidLinkOptions, usePlaidLink } from 'react-plaid-link';
 import { useRouter } from 'next/navigation';
 import { createLinkToken, exchangePublicToken } from '@/lib/actions/user.actions';
 import Image from 'next/image';
@@ -13,9 +13,8 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
   useEffect(() => {
     const getLinkToken = async () => {
       const data = await createLinkToken(user);
-
       setToken(data?.linkToken);
-    }
+    };
 
     getLinkToken();
   }, [user]);
@@ -24,15 +23,15 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
     await exchangePublicToken({
       publicToken: public_token,
       user,
-    })
+    });
 
     router.push('/');
-  }, [user])
-  
+  }, [user]);
+
   const config: PlaidLinkOptions = {
     token,
-    onSuccess
-  }
+    onSuccess,
+  };
 
   const { open, ready } = usePlaidLink(config);
   
@@ -54,7 +53,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
             width={24}
             height={24}
           />
-          <p className='hiddenl text-[16px] font-semibold text-black-2 xl:block'>Connect bank</p>
+          <p className='hiddenl text-[16px] font-semibold text-black-2 xl:block'>Connect Bank</p>
         </Button>
       ): (
         <Button onClick={() => open()} className="plaidlink-default">
@@ -64,7 +63,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
             width={24}
             height={24}
           />
-          <p className='text-[16px] font-semibold text-black-2'>Connect bank</p>
+          <p className='text-[16px] font-semibold text-black-2 hidden xl:block'>Connect Bank</p>
         </Button>
       )}
     </>
