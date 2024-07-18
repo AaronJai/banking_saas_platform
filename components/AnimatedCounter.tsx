@@ -1,21 +1,18 @@
 'use client';
 
-// import React from 'react'
-import CountUp from 'react-countup'
+import CountUp from 'react-countup';
 
-const AnimatedCounter = ( { amount }: { amount: number }) => {
+const AnimatedCounter = ({ amount }: { amount: number }) => {
   return (
-    <div className='w-full'>
-        <CountUp 
+    <div className="w-full">
+      <CountUp 
         decimals={2}
-        decimal=','
-        prefix='$'
-        end={amount} />
+        decimal=","
+        prefix="$"
+        end={amount} 
+      />
     </div>
   )
 }
 
 export default AnimatedCounter
-
-// This AnimatedCounter file allows us to turn the CountUp method server side,
-// instead of turning TotalBalanceBox client side.
