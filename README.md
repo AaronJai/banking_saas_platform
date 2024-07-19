@@ -37,12 +37,19 @@ Session Replay - 'get to root cause of an issue by watching replays of real user
 
 # Features
 • **Authentication**: Implement ultra-secure SSR authentication with comprehensive validations and authorization.
+
 • **Connect Banks**: Integrate with Plaid for linking multiple bank accounts.
+
 • **Home Page**: Display an overview of the user account, including total balance across connected banks, recent transactions, and spending by category.
+
 • **My Banks**: Provide a complete list of all connected banks with respective balances and account details.
+
 • **Transaction History**: Offer pagination and filtering options to view transaction history across different banks.
+
 • **Real-time Updates**: Reflect changes across all relevant pages when new bank accounts are connected.
+
 • **Funds Transfer**: Enable users to transfer funds using Dwolla, including required fields and recipient bank ID.
+
 • **Responsiveness**: Ensure the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience on desktop, tablet, and mobile platforms.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
