@@ -70,7 +70,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                 )
               })}
 
-              <PlaidLink user={user} />
+              <PlaidLink user={user} variant="mobile"/>
               </nav>
             </SheetClose>
 
