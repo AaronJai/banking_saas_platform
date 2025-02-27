@@ -7,6 +7,9 @@ When linking, username is user_good and password is user_pass.
 this is using a SANDBOX. Development and Production keys are paid through dwolla.
 Chase checking and savings account works best.
 
+# Update 27/02/2025
+Found that quick transaction history and transaction history tab not working. Issue in line 44 of TransactionHistory.tsx where transaction is passing as undefined so the map function isn't working. Haven't had much time looking into it.
+
 # Tech Stack
 ### Next.js
 React framework for server-side rendering, group routes, nested layouts, server actions, etc.
